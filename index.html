@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jupiter's Upcoming No.1 University| Srivastava University | Apply Now</title>
+    <link rel="stylesheet" href="Css/University.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+        <style>
+            .maindiv{
+                width: 100%;
+                height: 550px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-image: url('https://images.unsplash.com/photo-1567168544646-208fa5d408fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+                background-size: 100% 100%;
+                animation: slider 9s ease-in-out 0.5s infinite backwards;
+
+            }
+             @keyframes slider {
+                0%{
+                    background-image: url('https://images.unsplash.com/photo-1579257289847-88c3c06b3f9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+                    opacity: 0.8;
+                }
+                25%{
+                    background-image: url('https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+                    opacity: 0.8;
+                }
+                75%{
+                    background-image: url('https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+                    opacity: 0.9;
+                }
+                100%{
+                    background-image: url('https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+                    opacity: 0.9;
+                }
+            } 
+        </style>
+</head>
+
+<body>
+    <div class="maindiv">
+
+    </div>
+    <div class="flex"> -->
+        <p class="header-sub-title" id="word"></p><p class="header-sub-title blink"></p>
+    </div>
+    <script>
+        let name=prompt("Please,Enter your Name.");
+        console.log(name);
+        const words = ["Welcome To Srivastava University. ", " Engineering. ", " Medical. ", " Commerce. " ,"Developed by prateek Srivastava. ","Developed for practice purpose only"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 100);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 150);
+	};
+	loopDeleting();
+};
+
+typingEffect();
+    </script>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Images/Universitylogo - Copy.png" alt="Srivastava_University.edu.in">
+        </div>
+        <ul>
+            <li id="item"><a href="#">Home</a></li>
+            <li id="item"><a href="#">About</a></li>
+            <li id="item"><a href="#">Events</a></li>
+            <li id="item"><a href="#">Clubs</a></li>
+            <li id="item"><a href="#">Services</a></li>
+            <li id="item"><a href="#">Sports</a></li>
+        </ul>
+        <div class="right">
+            <button class="btn">Student help</button><button class="btn">News</button><button class="btn">Contect
+                us</button>
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="deco">Welcome to Srivastava University</h1>
+        <p>Jupiter's Best Private University   || Best Engineering College.</p>
+        <p>Top Mnc Placement || Highest Package 21lpa || Naac accridated 'Z' Grade University.</p>
+        <button class btn2>Apply Now</button>
+    </section>
+    <section id="courses">
+        <div id="me5">
+            <h1>Our Campus Offers Students Dozens of Opportunities</h1>
+            <p>Our beautiful campus offers students the best of education and entertainment opportunities available in
+                the area for every student and university entrant.</p>
+        </div>
+        <section id="courseoffer">
+            <div class="engineer">
+                <img src="Images/Computer Engineering.jpg" alt="Computer Engineering">
+                <h2>Engineering</h2>
+                <p>It is an 8 semester Bachelor's degrees program in Computer Science & Engineering after 10+2 or
+                    equivalent. B Tech Computer Science & Engineering (CSE) focuses on the theoretical foundation of
+                    computing along with state-of-the-art development of computing solutions.</p>
+                <button id="btn1">Read more</button>
+            </div>
+            <div class="medical">
+                <img src="Images/medical.jpg" alt="medical and Dental">
+                <h2>Medical</h2>
+                <p>
+                    Srivastava Medical College is a premier medical institute of India acknowledged as a centre of
+                    excellence for education and research. The college provides training to under-graduate and
+                    post-graduate
+                    medical and nursing students.</p>
+                <button id="btn2">Read more</button>
+            </div>
+            <div class="commerce">
+                <img src="Images/commerce.jpg" alt="Commerce">
+                <h2>Commerce</h2>
+                <p>
+                    Srivastava Commerce College is a top Class Commerce College in North India.It is established in
+                    1988.We
+                    offer highly educated Teacher.Our Student got Placement upto 42 Lpa.</p>
+                <button id="btn3">Read more</button>
+            </div>
+        </section>
+    </section>
+    <section class="back">
+        <div id="my5">
+            <h1>Trusted by Over 10000+ Students</h1>
+            <p>Join our community of students around the world helping you succeed.</p>
+            <button id="but7">Get Started</button>
+        </div>
+    </section>
+    <section class="Placement">
+        <div id="Placement1">
+            <h1 id="m8"> Recruiters </h1>
+            <h1 id="m9">_____</h1>
+        </div>
+    </section>
+    <section class="placementback">
+        <div id="rec1"><img src="Images/google - Copy.jpg" alt="Google"></div>
+        <div id="rec2"><img src="Images/facebook.jpg" alt="Facebook"></div>
+        <div id="rec3"><img src="Images/Microsoft - Copy.png" alt="Microsoft"></div>
+        <div id="rec4"><img src="Images/linkedin-copy.png" alt="LinkedIn"></div>
+        <div id="rec5"><img src="Images/amazon.jpg" alt="Amazon"></div>
+        }
+
+    </section>
+    <section class="Allimage">
+        <div id="my88">
+            <div id="me0">
+                <img src="Images/gallery-simple-1-677x677.jpg" alt="ok">
+            </div>
+            <div id="me22">
+                <img src="Images/gallery-simple-2-677x677.jpg" alt="ok">
+            </div>
+            <div id="me21">
+                <img src="Images/gallery-simple-3-677x677.jpg" alt="ok">
+            </div>
+            <div id="me23">
+                <img src="Images/gallery-simple-6-677x677.jpg" alt="Ok">
+            </div>
+        </div>
+    </section>
+    <section class="last">
+        <div id="logo1">
+            <hr>
+            <img src="Images/Universitylogo - Copy.png" alt="">
+            <h3>Developed by Prateek Shrivastawa (B.Tech GLA University Mathura)</h3>
+        </div>
+    </section>
+    
+</body>
+
+</html>
