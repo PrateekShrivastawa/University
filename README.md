@@ -1,2 +1,3 @@
-# University
-"Srivastava University"(only front end side) developed by me using html,css and javascript.
+# Sample University Website
+A simple website created to revision all concept of HTML,CSS and JavaScript.
+
